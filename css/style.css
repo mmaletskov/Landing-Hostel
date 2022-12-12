@@ -1,0 +1,431 @@
+/* === fonts === */
+@font-face {
+    font-family:'GOGOIA-DECO';
+    src: url('../fonts/gogoia-deco.ttf');
+}
+@font-face {
+    font-family:'Oswald-Light';
+    src: url('../fonts/oswald/Oswald-Light.ttf');
+}
+@font-face {
+    font-family:'Oswald-Regular';
+    src: url('../fonts/oswald/Oswald-Regular.ttf');
+}
+@font-face {
+    font-family:'Oswald-Medium';
+    src: url('../fonts/oswald/Oswald-Medium.ttf');
+}
+@font-face {
+    font-family:'Oswald-SemiBold';
+    src: url('../fonts/oswald/Oswald-SemiBold.ttf');
+}
+@font-face {
+    font-family:'Oswald-Bold';
+    src: url('../fonts/oswald/Oswald-Bold.ttf');
+}
+/* =========== */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* container */
+.container{
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* ========= */
+
+
+/* header */
+.header{
+    width: 100%;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'GOGOIA-DECO';
+
+    padding-top: 25px;
+    padding-bottom: 25px;   
+
+    /* background-color: aqua; */
+}
+.menu{
+    margin-left: 125px;
+    margin-right: 70px;
+}
+.menu-list{
+    display: flex;
+    gap: 25px;
+
+    letter-spacing: 1px;
+}
+.header__contacts{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-btn{
+    padding: 10px 30px;
+    background-color: #03426A;
+    border-radius: 7px;
+}
+.header-btn span{
+    color: white;
+}
+/* ====== */
+
+/* banner */
+.banner{
+    width: 100%;
+    background: url('../images/jpg/background-image.jpg') no-repeat center/cover;
+}
+.banner__text{
+    padding-top: 245px;
+    padding-bottom: 245px;
+    margin-left: 80px;
+    width: 300px;
+}
+
+.banner-title{
+    font-family: 'GOGOIA-DECO';
+    font-size: 75px;
+    letter-spacing: 10px;
+
+    padding-bottom: 70px;
+    color: white;
+}
+
+.banner-btn{
+    padding: 25px 50px;
+    background-color: #1D71B8;
+    border-radius: 10px;
+
+}
+
+.banner-btn span{
+    font-family: 'GOGOIA-DECO';
+    font-size: 28px;
+    color: white;
+}
+/* ====== */
+
+/* about company */
+.about__company{
+    width: 100%;
+}
+.about__company-inner{
+    text-align: center;
+}
+.about__company-title{
+    font-family: 'GOGOIA-DECO';
+    font-size: 27px;
+    letter-spacing: 7px;
+
+    padding-top: 80px;
+    padding-bottom: 65px;
+}
+.about__company-subtitle{
+    font-family:'Oswald-Light';
+    font-size: 19px;
+    letter-spacing: 2px;
+
+    padding-bottom: 60px;
+}
+.about__company-image{
+    padding-bottom: 60px;
+}
+
+.about__company-text{
+    font-family: 'Oswald-Light';
+    font-size: 19px;
+    letter-spacing: 2px;
+    padding-bottom:125px;
+
+    text-align: justify;
+
+    max-width: 675px;
+    margin: 0 auto;
+}
+/* ============= */
+
+/* benefits */
+.benefits{
+    width: 100%;
+    background-color: #1D71B8;
+}
+
+
+.benefits__title{
+    font-family: 'GOGOIA-DECO';
+    font-size: 27px;
+    color: white;
+    letter-spacing: 7px;
+
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.benefits_slider{
+    padding-bottom: 100px;
+}
+
+.slide{
+   display: block;
+}
+
+.descr{
+    text-align: center;
+    width: 260px;
+    margin: 0 auto;
+}
+.descr p{
+    color: white;
+    font-family: 'Oswald-Light';
+    font-size: 15px;
+    letter-spacing: 2px;
+
+    padding-top: 30px;
+}
+
+.photo{
+    width: 85px;
+    height: 85px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    margin: 0 auto;
+}
+
+
+.slick-next {
+   width: 40px;
+}
+/* ======== */
+
+/* catalog */
+.catalog{
+    width: 100%;
+}
+
+.catalog__title{
+    font-family: 'GOGOIA-DECO';
+    font-size: 27px;
+    text-align: center;
+    letter-spacing: 7px;
+
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 30px;
+    background-color:#1D71B8;
+    border-radius: 8px;
+
+    margin-bottom: 40px;
+}
+
+.filter__title{
+    font-family:'GOGOIA-DECO';
+    font-size: 20px;
+    color: #03426A;
+
+    margin-left: 40px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.price-title{
+    font-family: 'Oswald-Light';
+    font-size: 16px;
+    color: white;
+}
+
+.form-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-price h4{
+    font-family: 'Oswald-Light';
+    font-size: 14px;
+    color: white;
+}
+
+.form-price input{
+    background-color: aliceblue;
+    width: 75px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.animal-title{
+    font-family: 'Oswald-Regular';
+    font-size: 16px;
+    color: white;
+}
+
+.animal{
+    display: flex;
+    gap: 20px;
+    align-items:center;
+}
+
+.checkbox{
+    display: flex;
+    gap: 20px;
+}
+
+.yes h4{
+    font-family: 'Oswald-Regular';
+    font-size: 14px;
+    color: white;
+}
+
+.yes input{
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+.no h4{
+    font-family: 'Oswald-Regular';
+    font-size: 14px;
+    color: white;
+}
+
+.no input{
+    width: 20px;
+    height: 20px;
+}
+
+.persons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.persons-title{
+    font-family:'Oswald-Regular';
+    font-size: 16px;
+    color: white;
+}
+select{
+    width: 45px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.search-btn{
+    padding: 10px 60px;
+    display: inline-block;
+    align-self: center;
+    border-radius: 5px;
+    background-color: white;
+
+
+    font-family: 'Oswald-Light';
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: all .25s linear;
+}
+
+.search-btn:hover{
+    background-color: #03426A;
+    color: white;
+}
+
+.catalog__top{
+    
+}
+
+.catalog-rooms{
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog__room{
+    width: 330px;
+    text-align: center;
+}
+
+.room-title{
+    text-align: center;
+    font-family: 'Oswald-Regular';
+    font-size: 20px;
+    letter-spacing: 3px;
+
+    padding-top: 15px;
+}
+
+.price{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    width: 310px;
+    padding-top: 15px;
+}
+
+.descr-item{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.descr-title{
+    font-family: 'Oswald-Regular';
+    font-size: 15px;
+
+}
+
+.descr-price{
+    font-family: 'Oswald-Bold';
+    font-size: 32px;
+    color: #03426A;
+
+    text-align: center;
+
+    padding-top: 60px;
+    padding-bottom: 15px;
+}
+
+.reserv-btn{
+    padding: 12px 25px;
+    background-color: #03426A;
+    border-radius:7px;
+    display: inline-block;
+    text-align: center;
+}
+
+.reserv-btn span{
+    font-family: 'Oswald-Bold';
+    font-size: 14px;
+    color: white;
+
+    letter-spacing: 2px;
+}
+/* ======= */
